@@ -1,0 +1,325 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('fondo-patron.png') no-repeat center center fixed;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #000;
+    overflow-x: hidden; 
+    min-height: 100vh;
+}
+header {
+    display: flex;
+    align-items: center; /* Alinea el logo y el título en la misma línea */
+    justify-content: center; /* Centra los elementos en el header */
+    width: 100%;
+    padding: 10px 20px;
+    gap: 10px;
+}
+
+/* Estilos para el logo */
+.logo {
+    display: flex;
+    align-items: center; /* Asegura que el logo y el título queden alineados verticalmente */
+    margin: 0;
+}
+
+.logo img {
+    width: 60px; /* Ajusta el tamaño del logo */
+    height: auto;
+    margin-right: 15px; /* Espacio entre el logo y el título */
+}
+
+/* Estilos para el título */
+.titulo-central {
+    text-align: center;
+    flex-grow: 1; /* Ocupa el espacio disponible sin mover el logo */
+}
+
+.titulo-central h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+nav a.active {
+    color: #000000;
+}
+
+.decoracion {
+    width: 100vw;
+    height: 60px;
+   background-image: url(decoracion.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   margin: 0;
+   padding: 0;
+  
+}
+
+.section-title {
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 0;
+}
+.decoracion {
+    width: 100vw;
+    height: 60px;
+   background-image: url(decoracion.jpg);
+   background-repeat: repeat;
+   background-size: cover;
+   background-position: center;
+   margin: 0;
+   padding: 0;
+}
+.separador {
+    width: 100%;
+    height: 2px;
+    background: #000000;
+    margin: 10px auto;
+}
+
+.separador-inferior {
+    width: 100%; /* O usa 100vw si quieres que ocupe toda la pantalla */
+    height: 2px;
+    background: #000000; /* Puedes cambiar el color si quieres */
+    margin: 0;
+}
+h1, h2 {
+    text-align: center;
+    width: 100%;}
+
+.bloomshell {
+    text-align: center;
+    padding: 40px 20px;
+    display: block; /* Asegura que ocupe toda la línea */
+    width: 100%;
+
+}
+
+.titulo-bloomshell {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los productos se ajusten en varias líneas si es necesario */
+    justify-content: center; /* Centra los productos en la pantalla */
+    gap: 20px; /* Espacio entre los productos */
+    padding: 20px; /* Espacio interno para que no queden pegados al borde */
+}
+.productos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+    background: url('fondo-puntos-corazones.jpg') repeat;
+    background-size: contain;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.producto {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.producto h3 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+
+.producto p {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.producto a {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #b174ec;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    transition: background 0.3s;
+    font-family: arial ;
+    font-weight: bold;
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.producto {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.producto h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.producto p {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+.producto button {
+    background: #b76cd2;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.producto a:hover {
+    background: #8e5ba6;
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/* Ajustar el fondo para que se vea igual en todas las pantallas */
+body {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Mantener el menú horizontal en móviles */
+nav {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden si no caben */
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Ajustar los productos para que sigan en varias columnas */
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Mantiene varias columnas */
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Ajustar las imágenes para que no se deformen */
+.producto img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover; /* Asegura que las imágenes se vean bien */
+}
+
+/* Para móviles: Mantener el mismo diseño pero más compacto */
+@media (max-width: 600px) {
+    body {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: nowrap;
+        overflow-x: auto; /* Permite deslizar el menú si es muy ancho */
+        white-space: nowrap;
+    }
+
+    .productos {
+        grid-template-columns: repeat(2, 1fr); /* Mantiene 2 columnas en lugar de una sola */
+    }
+}
+/* Contenedor para el logo y el título */
+.header-container {
+    display: flex;
+    align-items: center; /* Alinea el logo y el título en el mismo nivel */
+    justify-content: space-between; /* Separa el logo y el título */
+    padding: 10px;
+}
+
+/* Ajustar el logo */
+.logo img {
+    max-width: 120px; /* Ajusta el tamaño del logo */
+    height: auto;
+}
+
+/* Ajustar el título */
+h1 {
+    font-size: 32px;
+    text-align: center;
+    flex-grow: 1; /* Hace que el título ocupe el espacio disponible sin empujar el logo */
+}
+
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 10px; /* Agrega espacio entre el logo y el título */
+    }
+
+    .logo img {
+        width: 50px; /* Reduce el tamaño del logo */
+    }
+
+    .titulo-central h1 {
+        font-size: 20px; /* Reduce el tamaño del título en móviles */
+    }
+}
